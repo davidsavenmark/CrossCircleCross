@@ -16,6 +16,7 @@
 		63EF630025979048004D11E2 /* CrossCircleCrossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF62FF25979048004D11E2 /* CrossCircleCrossTests.swift */; };
 		63EF630B25979048004D11E2 /* CrossCircleCrossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF630A25979048004D11E2 /* CrossCircleCrossUITests.swift */; };
 		63EF631925979188004D11E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF631825979188004D11E2 /* SceneDelegate.swift */; };
+		63EF631B2597931E004D11E2 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF631A2597931E004D11E2 /* BoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		63EF630A25979048004D11E2 /* CrossCircleCrossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossCircleCrossUITests.swift; sourceTree = "<group>"; };
 		63EF630C25979048004D11E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63EF631825979188004D11E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		63EF631A2597931E004D11E2 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				63EF62E725979044004D11E2 /* AppDelegate.swift */,
 				63EF631825979188004D11E2 /* SceneDelegate.swift */,
+				63EF631A2597931E004D11E2 /* BoardView.swift */,
 				63EF62E925979044004D11E2 /* ViewController.swift */,
 				63EF62EB25979044004D11E2 /* Main.storyboard */,
 				63EF62F125979048004D11E2 /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			files = (
 				63EF62F025979044004D11E2 /* CrossCircleCross.xcdatamodeld in Sources */,
 				63EF62EA25979044004D11E2 /* ViewController.swift in Sources */,
+				63EF631B2597931E004D11E2 /* BoardView.swift in Sources */,
 				63EF62E825979044004D11E2 /* AppDelegate.swift in Sources */,
 				63EF631925979188004D11E2 /* SceneDelegate.swift in Sources */,
 			);
