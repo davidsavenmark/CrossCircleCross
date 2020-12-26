@@ -15,6 +15,7 @@
 		63EF62F525979048004D11E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EF62F325979048004D11E2 /* LaunchScreen.storyboard */; };
 		63EF630025979048004D11E2 /* CrossCircleCrossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF62FF25979048004D11E2 /* CrossCircleCrossTests.swift */; };
 		63EF630B25979048004D11E2 /* CrossCircleCrossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF630A25979048004D11E2 /* CrossCircleCrossUITests.swift */; };
+		63EF631925979188004D11E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF631825979188004D11E2 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		63EF630625979048004D11E2 /* CrossCircleCrossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossCircleCrossUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EF630A25979048004D11E2 /* CrossCircleCrossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossCircleCrossUITests.swift; sourceTree = "<group>"; };
 		63EF630C25979048004D11E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EF631825979188004D11E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				63EF62E725979044004D11E2 /* AppDelegate.swift */,
+				63EF631825979188004D11E2 /* SceneDelegate.swift */,
 				63EF62E925979044004D11E2 /* ViewController.swift */,
 				63EF62EB25979044004D11E2 /* Main.storyboard */,
 				63EF62F125979048004D11E2 /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 				63EF62F025979044004D11E2 /* CrossCircleCross.xcdatamodeld in Sources */,
 				63EF62EA25979044004D11E2 /* ViewController.swift in Sources */,
 				63EF62E825979044004D11E2 /* AppDelegate.swift in Sources */,
+				63EF631925979188004D11E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P9XJ93HP6;
 				INFOPLIST_FILE = CrossCircleCross/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P9XJ93HP6;
 				INFOPLIST_FILE = CrossCircleCross/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
