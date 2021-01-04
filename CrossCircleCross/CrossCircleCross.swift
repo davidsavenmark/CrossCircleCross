@@ -31,7 +31,7 @@ extension CrossCircleCross: CustomStringConvertible {
         
         for i in 0..<3{
             let row = 2 - i
-            desc += "\(2 - i)"
+            desc += "\(row)"
             for col in 0..<3 {
                 if let piece = pieceAt(col: col, row: row) {
                     desc += piece.player.isX() ? " X" : " O"
