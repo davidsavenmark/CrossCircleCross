@@ -11,7 +11,7 @@ import Foundation
 struct CrossCircleCross {
     
     var piecesBox: Set<Piece> = [
-        Piece (col: 0, row: 0, player: .X),
+        Piece (col: 0, row: 1, player: .X),
         Piece (col: 1, row: 1, player: .O),
     ]
     

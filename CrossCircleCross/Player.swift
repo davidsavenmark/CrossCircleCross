@@ -12,13 +12,15 @@ public enum Player {
     case X
     case O
     
+    
+    
     func isX() -> Bool {
         self == .X
         
-        return true
-        
+        return self == .X
     
         }
     
     
 }
+
