@@ -10,10 +10,9 @@ import Foundation
 
 struct CrossCircleCross {
     
-    var piecesBox: Set<Piece> = [
-        Piece (col: 0, row: 1, player: .X),
-        Piece (col: 1, row: 1, player: .O),
-    ]
+    private var playersTurn: Player = .X
+    
+    var piecesBox: Set<Piece> = []
     
     func pieceAt (col: Int, row: Int) -> Piece? {
         for piece in piecesBox {
@@ -23,6 +22,16 @@ struct CrossCircleCross {
         }
         return nil
     }
+    
+    mutating func dropAt(col: Int, row: Int){
+        guard pieceAt(col: col, row: row) == nil else {
+           return
+        }
+        
+        piecesBox.insert(Piece(col: col, row: row, player: playersTurn))
+        playersTurn = playersTurn.isX() ? .O : .X
+    }
+    
 }
 
 extension CrossCircleCross: CustomStringConvertible {

@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		633C4ADA25A55F74002B4A99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		63465F9925A4DE8700DD4EA0 /* CrossCircleCrossDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossCircleCrossDelegate.swift; sourceTree = "<group>"; };
 		636C63E12597A9AE00A622E4 /* CrossCircleCross.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossCircleCross.swift; sourceTree = "<group>"; };
 		636C63E32597AA0B00A622E4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -325,6 +326,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				63EF62EC25979044004D11E2 /* Base */,
+				633C4ADA25A55F74002B4A99 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
