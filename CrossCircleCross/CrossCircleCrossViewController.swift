@@ -11,7 +11,7 @@ import MultipeerConnectivity
 
 class CrossCircleCrossViewController: UIViewController {
     
-    let serviceType = "ds-crosscirclecross"
+    let serviceType = "ds-tictactoe"
     
     var crossCircleCross = CrossCircleCross()
     
@@ -33,11 +33,10 @@ class CrossCircleCrossViewController: UIViewController {
     
         
     }
-    
   
+
     @IBAction func advertise(_ sender: Any) {
-        
-        let nearbyServiceAdvertiser = MCNearbyServiceAdvertiser(peer: peerID, discoveryInfo: nil, serviceType: serviceType)
+        let nearbyServiceAdvertiser = MCNearbyServiceAdvertiser(peer: peerID, discoveryInfo: nil, serviceType: serviceType )
         nearbyServiceAdvertiser.delegate = self
         nearbyServiceAdvertiser.startAdvertisingPeer()
     }
@@ -52,13 +51,19 @@ class CrossCircleCrossViewController: UIViewController {
         boardView.setNeedsDisplay()
         
         
+       
+        
+        
     }
     
     @IBAction func invite(_ sender: Any) {
+        
         let browser = MCBrowserViewController(serviceType: serviceType, session: session)
         browser.delegate = self
         present(browser, animated: true, completion: nil)
+        
     }
+    
     
 }
     
