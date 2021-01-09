@@ -18,6 +18,8 @@ public enum Player {
         self == .X
         
         return self == .X
+        
+    
     
         }
     
