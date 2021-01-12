@@ -36,7 +36,7 @@ class CrossCircleCrossViewController: UIViewController {
   
 
     @IBAction func advertise(_ sender: Any) {
-        let nearbyServiceAdvertiser = MCNearbyServiceAdvertiser(peer: peerID, discoveryInfo: nil, serviceType: serviceType )
+        nearbyServiceAdvertiser = MCNearbyServiceAdvertiser(peer: peerID, discoveryInfo: nil, serviceType: serviceType )
         nearbyServiceAdvertiser.delegate = self
         nearbyServiceAdvertiser.startAdvertisingPeer()
     }
@@ -47,12 +47,17 @@ class CrossCircleCrossViewController: UIViewController {
         let col: Int = Int(finger.x / (boardView.bounds.width/3))
         let row: Int = 2 - Int(finger.y / (boardView.bounds.height/3))
         crossCircleCross.dropAt(col: col, row: row)
-        print(crossCircleCross)
+        print(crossCircleCross, terminator: "\n\n")
+      
         boardView.setNeedsDisplay()
         
-        
-       
-        
+        let move = "\(col),\(row)" // 0,0
+        if let data = move.data(using: .utf8) {
+            try? session.send(data, toPeers: session.connectedPeers, with: .reliable)
+            
+            
+        }
+    
         
     }
     
@@ -94,10 +99,23 @@ func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewCon
 
 extension CrossCircleCrossViewController: MCSessionDelegate {
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
-        
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
+        if let moveStr = String(data: data, encoding: .utf8) {
+            let moveArray = moveStr.split(separator: ",") // "0,0 => "0", "0" // convert to integer
+            if let col = Int(moveArray[0]), let row = Int (moveArray[1]) {
+                DispatchQueue.main.async {
+                    self.crossCircleCross.dropAt(col: col, row: row)
+                    self.boardView.setNeedsDisplay()
+                }
+                
+                
+                
+                
+            }
+            
+        }
         
     }
     
@@ -110,8 +128,6 @@ extension CrossCircleCrossViewController: MCSessionDelegate {
     }
     
     func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {
-        
-    }
     
-
+    }
 }
