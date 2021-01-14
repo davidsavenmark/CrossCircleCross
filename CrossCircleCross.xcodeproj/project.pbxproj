@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63465F9A25A4DE8700DD4EA0 /* CrossCircleCrossDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63465F9925A4DE8700DD4EA0 /* CrossCircleCrossDelegate.swift */; };
-		636C63E22597A9AE00A622E4 /* CrossCircleCross.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C63E12597A9AE00A622E4 /* CrossCircleCross.swift */; };
-		636C63E42597AA0B00A622E4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C63E32597AA0B00A622E4 /* Player.swift */; };
-		636C63E62597AA7000A622E4 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C63E52597AA7000A622E4 /* Piece.swift */; };
 		63EF62E825979044004D11E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF62E725979044004D11E2 /* AppDelegate.swift */; };
 		63EF62EA25979044004D11E2 /* CrossCircleCrossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF62E925979044004D11E2 /* CrossCircleCrossViewController.swift */; };
 		63EF62ED25979044004D11E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EF62EB25979044004D11E2 /* Main.storyboard */; };
@@ -20,7 +16,6 @@
 		63EF630025979048004D11E2 /* CrossCircleCrossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF62FF25979048004D11E2 /* CrossCircleCrossTests.swift */; };
 		63EF630B25979048004D11E2 /* CrossCircleCrossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF630A25979048004D11E2 /* CrossCircleCrossUITests.swift */; };
 		63EF631925979188004D11E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF631825979188004D11E2 /* SceneDelegate.swift */; };
-		63EF631B2597931E004D11E2 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF631A2597931E004D11E2 /* BoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +37,6 @@
 
 /* Begin PBXFileReference section */
 		633C4ADA25A55F74002B4A99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		63465F9925A4DE8700DD4EA0 /* CrossCircleCrossDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossCircleCrossDelegate.swift; sourceTree = "<group>"; };
-		636C63E12597A9AE00A622E4 /* CrossCircleCross.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossCircleCross.swift; sourceTree = "<group>"; };
-		636C63E32597AA0B00A622E4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		636C63E52597AA7000A622E4 /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
 		63EF62E425979044004D11E2 /* CrossCircleCross.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrossCircleCross.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EF62E725979044004D11E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63EF62E925979044004D11E2 /* CrossCircleCrossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossCircleCrossViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +52,6 @@
 		63EF630A25979048004D11E2 /* CrossCircleCrossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossCircleCrossUITests.swift; sourceTree = "<group>"; };
 		63EF630C25979048004D11E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63EF631825979188004D11E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63EF631A2597931E004D11E2 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +104,6 @@
 			children = (
 				63EF62E725979044004D11E2 /* AppDelegate.swift */,
 				63EF631825979188004D11E2 /* SceneDelegate.swift */,
-				63465F9925A4DE8700DD4EA0 /* CrossCircleCrossDelegate.swift */,
-				63EF631A2597931E004D11E2 /* BoardView.swift */,
-				636C63E12597A9AE00A622E4 /* CrossCircleCross.swift */,
-				636C63E32597AA0B00A622E4 /* Player.swift */,
-				636C63E52597AA7000A622E4 /* Piece.swift */,
 				63EF62E925979044004D11E2 /* CrossCircleCrossViewController.swift */,
 				63EF62EB25979044004D11E2 /* Main.storyboard */,
 				63EF62F125979048004D11E2 /* Assets.xcassets */,
@@ -279,14 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63EF62F025979044004D11E2 /* CrossCircleCross.xcdatamodeld in Sources */,
-				636C63E22597A9AE00A622E4 /* CrossCircleCross.swift in Sources */,
 				63EF62EA25979044004D11E2 /* CrossCircleCrossViewController.swift in Sources */,
-				63EF631B2597931E004D11E2 /* BoardView.swift in Sources */,
-				636C63E62597AA7000A622E4 /* Piece.swift in Sources */,
-				636C63E42597AA0B00A622E4 /* Player.swift in Sources */,
 				63EF62E825979044004D11E2 /* AppDelegate.swift in Sources */,
 				63EF631925979188004D11E2 /* SceneDelegate.swift in Sources */,
-				63465F9A25A4DE8700DD4EA0 /* CrossCircleCrossDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

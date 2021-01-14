@@ -20,10 +20,10 @@ class BoardView: UIView {
         halfCellSide = bounds.width / 6
         
         
-        //drawImageBoard()
+        drawImageBoard()
         
-        drawBoard()
-        drawPieces()
+        //drawBoard()
+        //drawPieces()
         
     
     }
